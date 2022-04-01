@@ -1,15 +1,21 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
- * main - function that prints all the arguments with a new line
- * @argc: count of the arguments
- * @argv: pointers array
- * Return: int
+ * main - Prints all the args content
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: Always zero
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	while (argc--)
+	int i;
+
+	for (i = 0; i < argc; i++)
 	{
-		printf("pocision %d tiene %s\n", argc, *argv++);
+		printf("%s\n", argv[i]);
 	}
+
 	return (0);
 }
