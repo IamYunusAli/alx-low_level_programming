@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 int _strlen(char *s);
 char *xarray(int size);
 char *_zero_iteration(char *s);
@@ -221,5 +220,4 @@ int main(int argc, char *argv[])
 	putchar('\n');
 	free(next_prod);
 	free(final_prod);
-	return (0);
 }
